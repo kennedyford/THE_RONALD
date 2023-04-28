@@ -16,14 +16,11 @@
     </head>
     <body>
         <h1>PyScript Tests</h1>
-        <button onclick="runTest()">Lets-a-go! (plz)</button>
-        <script> 
-            function runTest(){
-                pyscript.interpreter.interface.runPython(`
-                    from test import testy
-                    testy()
-                `)
-            }
-        </script>
+        <button onclick="runTest()">Lets-a-go again!</button>
+        <py-script> 
+        def runTest():
+            from test import testy
+            testy()
+        </py-script>
     </body>
 </html>
