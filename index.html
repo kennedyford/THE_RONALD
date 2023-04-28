@@ -44,7 +44,7 @@
                 outputBox = js.document.getElementById("output-box")
 
                 def runTest(event): 
-                    outputBox.value = testy();  
+                    outputBox.innerHTML = testy()  
 
                 cc = create_proxy(runTest)
 
