@@ -19,15 +19,15 @@
         <button id="test" type="button" class="button">This is a button, son.</button>
     
         <py-script>
-            from pyodide import create_proxy
+            from ffi import create_proxy
             from test import testy
 
             runButton = document.getElementById('test')
 
-            def runTest(event):
+            def runTest():
                 testy()    
 
-            cc = create_proxy(runTest())
+            cc = create_proxy(runTest)
 
             runButton.addEventListener("click", cc)
 
