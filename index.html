@@ -41,14 +41,17 @@
                 from test import testy
 
                 runButton = js.document.getElementById("button-test")
+                outputBox = js.document.getElementById("output-box")
 
-                def runTest(event):
-                    testy()    
+                def runTest(event): 
+                    outputBox.innerHTML = testy();  
 
                 cc = create_proxy(runTest)
 
                 runButton.addEventListener("click", cc)
             </py-script>
+
+            <input type="text" id="output-box" readonly>
 
             <!---onclick="runTest()"
             <script type="text/javascript"> 

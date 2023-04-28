@@ -1,2 +1,2 @@
 def testy():
-    print("This works again!")
+    return "This is the output!"
