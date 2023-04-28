@@ -23,7 +23,7 @@
                 console.log(pyodide.runPython("1 + 2"));
                 await pyodide.loadPackage("test");
                 pyodide.runPython(`
-                    from test import testy
+                    #from test import testy
                     testy()
                 `);
             }        
