@@ -16,7 +16,24 @@
     </head>
     <body>
         <h1>PyScript Tests</h1>
-        <button onclick="runTest()">Lets-a-go again!</button>
+        <button id="test" type="button" class="button">This is a button, son.</button>
+    
+        <py-script>
+            from pyodide import create_proxy
+            from test importy testy
+
+            runButton = document.getElementById('test')
+
+            def runTest(event):
+                testy()    
+
+            cc = create_proxy(runTest())
+
+            runButton.addEventListener("click", cc)
+
+        </py-script>
+
+        <!---
         <script type="text/javascript"> 
             async function runTest(){
                 let pyodide = await loadPyodide();
@@ -27,5 +44,6 @@
                 `);
             }        
         </script>
+        --->
     </body>
 </html>
