@@ -24,13 +24,12 @@
 
             runButton = document.getElementById('test')
 
-            def runTest():
+            def runTest(event):
                 testy()    
 
             cc = create_proxy(runTest)
 
             runButton.addEventListener("click", cc)
-
         </py-script>
 
         <!---
