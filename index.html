@@ -17,10 +17,15 @@
     <body>
         <h1>PyScript Tests</h1>
         <button onclick="runTest()">Lets-a-go again!</button>
-        <py-script> 
-        def runTest():
-            from test import testy
-            testy()
-        </py-script>
+        <script type="text/javascript"> 
+            async function runTest(){
+                let pyodide = await loadPyodide();
+                console.log(pyodide.runPython("1 + 2"));
+                pyodide.runPython(`
+                    from test import testy
+                    testy()
+                `);
+            }        
+        </script>
     </body>
 </html>
