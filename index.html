@@ -49,12 +49,13 @@
 
                 runButton.addEventListener("click", cc)
             </py-script>
+            <br>
             <button id="button-test2" type="button" class="test2">This is another button.</button>
             <py-script id="py-script" class="test2">
                 from pyodide.ffi import create_proxy
                 from test import testy
 
-                runButton = js.document.getElementById("button-test")
+                runButton = js.document.getElementById("button-test2")
                 outputBox = js.document.getElementById("output-box")
 
                 def runTest(event): 
