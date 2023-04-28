@@ -6,6 +6,7 @@
         <title>R.O.N.A.L.D.</title>
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
         <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.23.1/full/pyodide.js"></script>
         <py-config>
             packages = []
 
@@ -13,9 +14,16 @@
             files = ["/test.py"]
         </py-config>
     </head>
-    <button onclick="runTest()">Lets-a-go!</button>
     <body>
+        <script type="text/javascript">
+            async function main(){
+              let pyodide = await loadPyodide();
+              console.log(pyodide.runPython("1 + 2"));
+            }
+            main();
+        </script>
         <h1>PyScript Tests</h1>
+        <button onclick="runTest()">Lets-a-go!</button>
         <script> 
             function runTest(){
                 pyscript.interpreter.interface,runPython(`
