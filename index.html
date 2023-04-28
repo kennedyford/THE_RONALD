@@ -15,6 +15,13 @@
         </py-config>
     </head>
     <body>
+        <script type="text/javascript">
+            async function main(){
+              let pyodide = await loadPyodide();
+              console.log(pyodide.runPython("1 + 2"));
+            }
+            main();
+        </script>
         <h1>PyScript Tests</h1>
         <button onclick="runTest()">Lets-a-go! (plz)</button>
         <script> 
