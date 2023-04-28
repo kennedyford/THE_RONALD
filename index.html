@@ -22,7 +22,7 @@
             from pyodide.ffi import create_proxy
             from test import testy
 
-            runButton = document.getElementById('test')
+            runButton = js.document.getElementById('test')
 
             def runTest(event):
                 testy()    
