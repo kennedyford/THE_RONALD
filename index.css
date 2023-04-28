@@ -4,6 +4,12 @@
     padding-left: 105px;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* The sidenav */
 .sidenav {
     height: 100%;
