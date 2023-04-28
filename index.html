@@ -26,7 +26,7 @@
         <button onclick="runTest()">Lets-a-go!</button>
         <script> 
             function runTest(){
-                pyodide.runPython(`
+                pyscript.interpreter.interface.runPython(`
                     from test import testy
                     testy()
                 `)
