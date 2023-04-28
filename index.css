@@ -32,6 +32,6 @@
 }
   
 /* Page content */
-.main {
+#main {
     margin-left: 400px; /* Same as the width of the sidenav */
 } 
