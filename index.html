@@ -21,6 +21,7 @@
             async function runTest(){
                 let pyodide = await loadPyodide();
                 console.log(pyodide.runPython("1 + 2"));
+                await pyodide.loadPackage("test");
                 pyodide.runPython(`
                     from test import testy
                     testy()
