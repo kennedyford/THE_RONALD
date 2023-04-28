@@ -40,3 +40,8 @@
 #py-script {
     margin-left: 400px; /* Same as the width of the sidenav */
 }
+
+footer {
+    text-align: center;
+	padding: 10px;
+}
