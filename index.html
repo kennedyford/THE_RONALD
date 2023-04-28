@@ -19,7 +19,7 @@
         <button id="test" type="button" class="button">This is a button, son.</button>
     
         <py-script>
-            from ffi import create_proxy
+            from pyodide.ffi import create_proxy
             from test import testy
 
             runButton = document.getElementById('test')
