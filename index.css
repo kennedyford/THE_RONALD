@@ -1,7 +1,7 @@
 /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 350px;
+    width: 400px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -9,6 +9,7 @@
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
+    margin: 50px;
 }
 
 /* The navigation menu links */
@@ -28,5 +29,5 @@
   
 /* Page content */
 .main {
-    margin-left: 350px; /* Same as the width of the sidenav */
+    margin-left: 400px; /* Same as the width of the sidenav */
 } 
