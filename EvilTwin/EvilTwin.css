@@ -4,14 +4,14 @@
     padding-left: 75px;
 }
 
+#title {
+    text-align: center;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-#titie {
-    text-align: center;
 }
 
 /* The sidenav */
