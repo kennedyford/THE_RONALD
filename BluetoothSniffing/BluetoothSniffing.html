@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
         <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
         <script src="https://cdn.jsdelivr.net/pyodide/v0.23.1/full/pyodide.js"></script>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="BluetoothSniffing.css">
         <py-config>
             packages = []
 
@@ -25,15 +25,15 @@
     <body>
         <div id="mySidenav" class="sidenav">
             <h1 id="ron">R. O. N. A. L. D.</h1>
-            <a href="./EvilTwin/EvilTwin.html">Evil Twin</a>
-            <a href="./DoS/DoS.html/">Denial of Service</a>
-            <a href="./Deauth/Deauth.html">Deauth</a>
-            <a href="./WifiSniffing/WifiSniffing.html">Wifi Sniffing</a>
-            <a href="./BluetoothSniffing/BluetoothSniffing.html">Bluetooth Sniffing</a>
+            <a href="../EvilTwin/EvilTwin.html">Evil Twin</a>
+            <a href="../DoS/DoS.html/">Denial of Service</a>
+            <a href="../Deauth/Deauth.html">Deauth</a>
+            <a href="../WifiSniffing/WifiSniffing.html">Wifi Sniffing</a>
+            <a href="../BluetoothSniffing/BluetoothSniffing.html">Bluetooth Sniffing</a>
         </div>
 
         <div id="main">
-            <h1>PyScript Tests</h1>
+            <h1>Bluetooth Sniffing</h1>
             <button id="button-test" type="button" class="test">This is a button, son.</button>
             <py-script id="py-script" class="test">
                 from pyodide.ffi import create_proxy

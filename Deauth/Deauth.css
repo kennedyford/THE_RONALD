@@ -1,0 +1,54 @@
+#ron {
+    font-family: 'Castoro Titling', cursive;
+    color: whitesmoke;
+    padding-left: 75px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The sidenav */
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+/* Page content */
+#main {
+    margin-left: 400px; /* Same as the width of the sidenav */
+} 
+
+#py-script {
+    margin-left: 400px; /* Same as the width of the sidenav */
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+	padding: 10px;
+}
