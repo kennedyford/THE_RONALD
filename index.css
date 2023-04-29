@@ -10,9 +10,20 @@
     font-family: 'Castoro Titling', cursive;
     font-size: 24px;
     padding-left: 400px;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#by {
+    text-align: center;
+    position: absolute;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 24px;
+    padding-left: 400px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .animated-ronald {
