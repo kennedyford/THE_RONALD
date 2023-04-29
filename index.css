@@ -1,5 +1,5 @@
 #ron {
-    font-family: 'Castoro Titling', cursive;
+    font-family: 'Bruno Ace', cursive;
     color: whitesmoke;
     padding-left: 75px;
 }
@@ -10,8 +10,8 @@
 
 .animated-ronald {
     padding-left: 400px;
-    font-size: 60px;
-    font-family: sans-serif;
+    font-size: 100px;
+    font-family: 'Castoro Titling', cursive;
     position: absolute;
     top: 50%;
     left: 50%;
