@@ -10,6 +10,10 @@ body {
     flex-direction: column;
 }
 
+#titie {
+    text-align: center;
+}
+
 /* The sidenav */
 .sidenav {
     height: 100%;
