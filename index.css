@@ -1,7 +1,7 @@
 #ron {
     font-family: 'Bruno Ace', cursive;
     color: whitesmoke;
-    padding-left: 75px;
+    padding-left: 40px;
 }
 
 #title {
@@ -14,7 +14,7 @@
     font-family: 'Castoro Titling', cursive;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
