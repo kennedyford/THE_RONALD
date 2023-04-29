@@ -22,6 +22,7 @@ span {
     display: inline-block;
     font-weight: bolder;
     animation: anim 6s linear infinite;
+    color: #ffffff;
 }
 
 @keyframes anim {
