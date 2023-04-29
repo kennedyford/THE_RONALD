@@ -34,53 +34,11 @@
 
         <div id="main">
             <h1 id="title">PyScript Tests</h1>
-            <button id="button-test" type="button" class="test">This is a button, son.</button>
-            <py-script id="py-script" class="test">
-                from pyodide.ffi import create_proxy
-                from test import testy
-
-                runButton = js.document.getElementById("button-test")
-                outputBox = js.document.getElementById("output-box")
-
-                def runTest(event): 
-                    outputBox.value = testy(1)  
-
-                cc = create_proxy(runTest)
-
-                runButton.addEventListener("click", cc)
-            </py-script>
-            <br>
-            <button id="button-test2" type="button" class="test2">This is another button.</button>
-            <py-script id="py-script" class="test2">
-                from pyodide.ffi import create_proxy
-                from test import testy
-
-                runButton = js.document.getElementById("button-test2")
-                outputBox = js.document.getElementById("output-box")
-
-                def runTest(event): 
-                    outputBox.value = testy(2)  
-
-                cc = create_proxy(runTest)
-
-                runButton.addEventListener("click", cc)
-            </py-script>
-            <br>
-            <input type="text" id="output-box" readonly>
-
-            <!---onclick="runTest()"
-            <script type="text/javascript"> 
-                async function runTest(){
-                    let pyodide = await loadPyodide();
-                    console.log(pyodide.runPython("1 + 2"));
-                    pyscript.interpreter.interface.runPython(`
-                        from test import testy
-                        testy()
-                    `);
-                }        
-            </script>
-            --->
+            <div class="animated-ronald">
+                RONALD
             </div>
+            
+        </div>
     </body>
     <footer>
         <div id="cprt">

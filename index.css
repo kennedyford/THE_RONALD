@@ -8,6 +8,16 @@
     text-align: center;
 }
 
+.animated-ronald {
+    padding-left: 400px;
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 body {
     min-height: 100vh;
     display: flex;
