@@ -56,6 +56,12 @@ body {
     margin: auto;
 }
 
+#ron-it-container {
+    text-align: center;
+    left: 50%;
+    margin-left: 400px;
+}
+
 #py-script {
     margin-left: 400px; /* Same as the width of the sidenav */
 }

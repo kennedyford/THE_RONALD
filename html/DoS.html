@@ -52,32 +52,23 @@
                 <label for="mmRadio">Multiple IPs, Multiple Ports</label><br>
             </div>
 
-            <button id="button-test" type="button" class="test">This is a button, son.</button>
-            <py-script id="py-script" class="test">
+            <div class="input-container">
+                <input type="text" id="target-ip">
+                <input type="text" id="source-ip">
+                <input type="text" id="source-port">
+            </div>
+            <br>
+            <div id="ron-it-container">
+                <button id="ron-it" type="button" class="dos">Lets Ron it!</button>
+            </div>
+            <py-script id="py-script" class="dos">
                 from pyodide.ffi import create_proxy
                 from test import testy
 
-                runButton = js.document.getElementById("button-test")
-                outputBox = js.document.getElementById("output-box")
+                runButton = js.document.getElementById("ron-it")
 
                 def runTest(event): 
                     outputBox.value = testy(1)  
-
-                cc = create_proxy(runTest)
-
-                runButton.addEventListener("click", cc)
-            </py-script>
-            <br>
-            <button id="button-test2" type="button" class="test2">This is another button.</button>
-            <py-script id="py-script" class="test2">
-                from pyodide.ffi import create_proxy
-                from test import testy
-
-                runButton = js.document.getElementById("button-test2")
-                outputBox = js.document.getElementById("output-box")
-
-                def runTest(event): 
-                    outputBox.value = testy(2)  
 
                 cc = create_proxy(runTest)
 
