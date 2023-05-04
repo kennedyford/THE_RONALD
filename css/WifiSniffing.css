@@ -59,15 +59,15 @@ body {
 }
 
 #ron-it-container {
-    margin-left: 400px;
     text-align: center;
     left: 50%;
+    margin-left: 400px;
 }
 
 #output-box {
-    margin-left: 400px;
     text-align: center;
     margin: auto;
+    margin-left: 400px;
 }
 
 #py-script {
