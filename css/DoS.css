@@ -48,16 +48,19 @@ body {
 #main {
     margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
+    margin: auto;
 } 
 
 .radio-container {
     text-align: center;
     position: center;
+    margin-left: 400px;
 }
 
 .input-container {
     text-align: center;
     position: center;
+    margin-left: 400px;
 }
 
 #ron-it-container {
