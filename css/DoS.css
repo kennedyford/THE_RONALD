@@ -66,6 +66,13 @@ body {
 #ron-it-container {
     text-align: center;
     left: 50%;
+    margin-left: 400px;
+}
+
+#output-box {
+    text-align: center;
+    margin: auto;
+    margin-left: 400px;
 }
 
 #py-script {
