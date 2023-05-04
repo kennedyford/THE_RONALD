@@ -52,12 +52,14 @@ body {
 } 
 
 .radio-container {
+    margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
     position: center;
     margin: auto;
 }
 
 .input-container {
+    margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
     position: center;
     margin: auto;
