@@ -5,6 +5,7 @@
 }
 
 #title {
+    margin-left: 400px;
     text-align: center;
     font-size: 50px;
     font-family: 'Castoro Titling', cursive;
@@ -52,16 +53,19 @@ body {
 } 
 
 #file-name {
+    margin-left: 400px;
     text-align: center;
     margin: auto;
 }
 
 #ron-it {
+    margin-left: 400px;
     text-align: center;
     margin: auto;
 }
 
 #output-box {
+    margin-left: 400px;
     text-align: center;
     margin: auto;
 }
