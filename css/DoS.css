@@ -51,6 +51,7 @@ body {
 
 .radio-td {
     margin-left: 400px; /* Same as the width of the sidenav */
+    top: 50%;
     left: 50%;
     text-align: center;
 }
