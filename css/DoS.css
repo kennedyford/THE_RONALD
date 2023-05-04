@@ -52,7 +52,7 @@ body {
 .radio-container {
     margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
-    position: absolute;
+    position: center;
     margin: auto;
 }
 
