@@ -50,7 +50,21 @@ body {
 } 
 
 #file-name {
-    align-self: center;
+    text-align: center;
+    margin-left: 400px;
+    margin: auto;
+}
+
+#ron-it {
+    text-align: center;
+    margin-left: 400px;
+    margin: auto;
+}
+
+#output-box {
+    text-align: center;
+    margin-left: 400px;
+    margin: auto;
 }
 
 #py-script {
