@@ -37,7 +37,7 @@
 }
 
 span {
-    display: inline;
+    display: inline-block;
     font-weight: bolder;
     animation: anim 6s linear infinite;
     color: #ffffff;
