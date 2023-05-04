@@ -46,29 +46,25 @@ body {
   
 /* Page content */
 #main {
-    margin-left: 800px; /* Same as the width of the sidenav */
+    margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
-    margin: auto;
 } 
 
 .radio-container {
     margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
     position: center;
-    margin: auto;
 }
 
 .input-container {
     margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
     position: center;
-    margin: auto;
 }
 
 #ron-it-container {
     text-align: center;
     left: 50%;
-    margin-left: 400px;
 }
 
 #py-script {
