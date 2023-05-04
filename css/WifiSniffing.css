@@ -58,13 +58,9 @@ body {
     margin-left: 400px;
 }
 
-#ron-it {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+#ron-it-containter {
+    text-align: center;
+    margin: auto;
     margin-left: 400px;
 }
 
