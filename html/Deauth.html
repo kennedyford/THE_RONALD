@@ -48,16 +48,15 @@
             </div>
             <py-script id="py-script" class="deauth">
                 from pyodide.ffi import create_proxy
-                from test import testy
 
                 MAC_Address = js.document.getElementById("mac-address")
                 runButton = js.document.getElementById("ron-it")
                 outputBox = js.document.getElementById("output-box")
 
-                def runTest(event): 
+                def Deauth(event): 
                     outputBox.value = MAC_Address.value  
 
-                cc = create_proxy(runTest)
+                cc = create_proxy(Deauth)
 
                 runButton.addEventListener("click", cc)
             </py-script>

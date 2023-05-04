@@ -63,14 +63,32 @@
             </div>
             <py-script id="py-script" class="dos">
                 from pyodide.ffi import create_proxy
-                from test import testy
+
+                ssRadio = js.document.getElementById("ssRadio")
+                smRadio = js.document.getElementById("smRadio")
+                msRadio = js.document.getElementById("msRadio")
+                mmRadio = js.document.getElementById("mmRadio")
+
+                targetIP = js.document.getElementById("target-ip")
+                sourceIP = js.document.getElementById("source-ip")
+                sourcePort = js.document.getElementById("source-port")
 
                 runButton = js.document.getElementById("ron-it")
+                outputBox = js.document.getElementById("output-box")
 
-                def runTest(event): 
-                    outputBox.value = testy(1)  
+                def DoS(event): 
+                    if (ssRadio.checked):
+                        outputBox.value = "ssRadio"
+                    elif (smRadio.checked):
+                        outputBox.value = "smRadio"
+                    elif (msRadio.checked):
+                        outputBox.value = "msRadio"
+                    elif (mmRadio.checked):
+                        outputBox.value = "mmRadio"
+                    else:
+                        outputBox.value = "*** ERROR! ***"
 
-                cc = create_proxy(runTest)
+                cc = create_proxy(DoS)
 
                 runButton.addEventListener("click", cc)
             </py-script>

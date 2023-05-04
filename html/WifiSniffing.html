@@ -48,16 +48,15 @@
             </div>
             <py-script id="py-script" class="wifi-sniffing">
                 from pyodide.ffi import create_proxy
-                from test import testy
 
                 fileName = js.document.getElementById("file-name")
                 runButton = js.document.getElementById("ron-it")
                 outputBox = js.document.getElementById("output-box")
 
-                def runTest(event): 
+                def WifiSniffing(event): 
                     outputBox.value = fileName.value  
 
-                cc = create_proxy(runTest)
+                cc = create_proxy(WifiSniffing)
 
                 runButton.addEventListener("click", cc)
             </py-script>
