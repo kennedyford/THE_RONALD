@@ -47,7 +47,27 @@ body {
 /* Page content */
 #main {
     margin-left: 400px; /* Same as the width of the sidenav */
+    text-align: center;
+    margin: auto;
 } 
+
+#mac-address {
+    text-align: center;
+    margin: auto;
+    margin-left: 400px;
+}
+
+#ron-it-container {
+    text-align: center;
+    left: 50%;
+    margin-left: 400px;
+}
+
+#output-box {
+    text-align: center;
+    margin: auto;
+    margin-left: 400px;
+}
 
 #py-script {
     margin-left: 400px; /* Same as the width of the sidenav */
