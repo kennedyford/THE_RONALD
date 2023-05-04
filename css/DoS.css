@@ -53,6 +53,7 @@ body {
     margin-left: 400px; /* Same as the width of the sidenav */
     text-align: center;
     margin: auto;
+    padding: 20px;
 }
 
 #py-script {
