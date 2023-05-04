@@ -82,8 +82,7 @@ span:nth-child(6) {
 
 body {
     min-height: 100vh;
-    display: fixed;
-    flex-direction: column;
+    display: inline;
 }
 
 /* The sidenav */
