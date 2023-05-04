@@ -51,9 +51,8 @@ body {
 
 .radio-td {
     margin-left: 400px; /* Same as the width of the sidenav */
+    left: 50%;
     text-align: center;
-    margin: 20px 20px;
-    padding: 20px 20px;
 }
 
 #py-script {
