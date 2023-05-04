@@ -60,8 +60,7 @@ body {
 
 #ron-it-containter {
     text-align: center;
-    margin: auto;
-    left: 50%;
+    left: 50% + 400px;
     margin-left: 400px;
 }
 
