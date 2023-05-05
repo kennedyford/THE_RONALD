@@ -52,9 +52,9 @@ body {
     margin: auto;
 } 
 
-#mac-address {
+.input-container {
     text-align: center;
-    margin: auto;
+    position: center;
     margin-left: 400px;
 }
 

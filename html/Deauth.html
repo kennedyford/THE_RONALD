@@ -41,7 +41,14 @@
         <div id="main">
             <h1 id="title">Deauth</h1>
             <br>
-            <input type="text" id="mac-address" placeholder="MAC Address">
+            
+            <div class="input-container">
+                <input type="text" id="iface" placeholder="Interface"><br>
+                <input type="text" id="count" placeholder="# of packets to send"><br>
+                <input type="text" id="bssid" placeholder="BSSID"><br>
+                <input type="text" id="target-mac" placeholder="Target MAC Address">
+            </div>
+
             <br><br>
             <div id="ron-it-container">
                 <button id="ron-it" type="button" class="deauth">Lets Ron it!</button>
@@ -49,12 +56,16 @@
             <py-script id="py-script" class="deauth">
                 from pyodide.ffi import create_proxy
 
-                MAC_Address = js.document.getElementById("mac-address")
+                iface = js.document.getElementById("iface")
+                count = js.document.getElementById("count")
+                bssid = js.document.getElementById("bssid")
+                targetMac = js.document.getElementById("target-mac")
+
                 runButton = js.document.getElementById("ron-it")
                 outputBox = js.document.getElementById("output-box")
 
                 def Deauth(event): 
-                    outputBox.value = MAC_Address.value  
+                    outputBox.value = iface.value + count.value + bssid.value + targetMac.value
 
                 cc = create_proxy(Deauth)
 
