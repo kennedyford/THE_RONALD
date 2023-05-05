@@ -40,34 +40,23 @@
 
         <div id="main">
             <h1 id="title">Evil Twin</h1>
-            <button id="button-test" type="button" class="test">This is a button, son.</button>
-            <py-script id="py-script" class="test">
-                from pyodide.ffi import create_proxy
-                from test import testy
-
-                runButton = js.document.getElementById("button-test")
-                outputBox = js.document.getElementById("output-box")
-
-                def runTest(event): 
-                    outputBox.value = testy(1)  
-
-                cc = create_proxy(runTest)
-
-                runButton.addEventListener("click", cc)
-            </py-script>
             <br>
-            <button id="button-test2" type="button" class="test2">This is another button.</button>
-            <py-script id="py-script" class="test2">
+            <input type="text" id="ap-name" placeholder="ESSID">
+            <br><br>
+            <div id="ron-it-container">
+                <button id="ron-it" type="button" class="evil-twin">Let's Ron it!</button>
+            </div>
+            <py-script id="py-script" class="evil-twin">
                 from pyodide.ffi import create_proxy
-                from test import testy
 
-                runButton = js.document.getElementById("button-test2")
+                apName = js.document.getElementById("ap-name")
+                runButton = js.document.getElementById("ron-it")
                 outputBox = js.document.getElementById("output-box")
 
-                def runTest(event): 
-                    outputBox.value = testy(2)  
+                def EvilTwin(event): 
+                    outputBox.value = apName.value  
 
-                cc = create_proxy(runTest)
+                cc = create_proxy(EvilTwin)
 
                 runButton.addEventListener("click", cc)
             </py-script>

@@ -5,6 +5,7 @@
 }
 
 #title {
+    margin-left: 400px;
     text-align: center;
     font-size: 50px;
     font-family: 'Castoro Titling', cursive;
@@ -47,7 +48,27 @@ body {
 /* Page content */
 #main {
     margin-left: 400px; /* Same as the width of the sidenav */
+    text-align: center;
+    margin: auto;
 } 
+
+#file-name {
+    text-align: center;
+    margin: auto;
+    margin-left: 400px;
+}
+
+#ron-it-container {
+    text-align: center;
+    left: 50%;
+    margin-left: 400px;
+}
+
+#output-box {
+    text-align: center;
+    margin: auto;
+    margin-left: 400px;
+}
 
 #py-script {
     margin-left: 400px; /* Same as the width of the sidenav */
